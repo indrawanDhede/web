@@ -7,8 +7,9 @@
     <!-- DataTales Example -->
     <div id="reload" class="card shadow mb-4">
         <div class="card-header py-3">
-            <a href="<?= base_url(); ?>admin_visi/tambah_visi" class="btn btn-primary">Tambah Data</a>
+            <a href="<?= base_url(); ?>visi/tambah" class="btn btn-primary">Tambah Data</a>
         </div>
+        <?= $this->session->flashdata('message'); ?>
         <div class="card-body">
             <div class="table-responsive">
                 <table class="table table-bordered display" id="table-visi" width="100%" cellspacing="0">
@@ -28,8 +29,8 @@
                                 <td><?= $visi->visi ?></td>
                                 <td><?= $visi->misi ?></td>
                                 <td>
-                                    <a href="<?php base_url('admin_visi/edit') ?>" class="btn btn-success btn-xs">Edit</a>
-                                    <a href="<?php base_url('admin_visi/delete') ?>" class="btn btn-danger btn-xs ml-2">Hapus</a>
+                                    <a href="<?php base_url() ?>visi/edit/<?= $visi->id_visi; ?>" class="btn btn-success btn-xs">Edit</a>
+                                    <a href="<?php base_url() ?>visi/hapus/<?= $visi->id_visi; ?>" class="btn btn-danger btn-xs ml-2">Hapus</a>
                                 </td>
                             </tr>
                         <?php endforeach; ?>

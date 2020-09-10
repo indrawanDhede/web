@@ -22,8 +22,11 @@ class Web extends CI_Controller
 
     public function visi()
     {
+        $this->load->model('Visi_model');
+        $data['visi'] = $this->Visi_model->getAll();
+
         $this->load->view('template/header');
-        $this->load->view('visi/index');
+        $this->load->view('visi/index', $data);
         $this->load->view('template/footer');
     }
 

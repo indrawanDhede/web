@@ -5,7 +5,7 @@
 
             <div class="card">
                 <div class="card-header">
-                    Form Tambah Data Mahasiswa
+                    Form Tambah Data
                 </div>
 
                 <div class="card-body">

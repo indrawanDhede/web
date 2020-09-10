@@ -16,10 +16,7 @@
                         <span></span>
                         <h2 align="center">Visi</h2>
                     </div>
-                    <p>PT. Kreatif Intelegensi Teknologi adalah yang bergerak dibidang penyedia solusi teknologi
-                        informasi yang berfokus pada pengembangan solusi intelegensi bisnis
-                        Kami membantu perusahaan anda untuk melakukan implementasi Businnes Intellegence melalui
-                        pendekatan data-driven.</p>
+                    <p><?= $visi[0]->visi; ?></p>
                     <div align="right">
                         <a href="#" class="primary-btn second-bg">Learn more</a>
                     </div>
@@ -32,10 +29,7 @@
                         <span></span>
                         <h2 align="center">Misi</h2>
                     </div>
-                    <p>PT. Kreatif Intelegensi Teknologi adalah yang bergerak dibidang penyedia solusi teknologi
-                        informasi yang berfokus pada pengembangan solusi intelegensi bisnis
-                        Kami membantu perusahaan anda untuk melakukan implementasi Businnes Intellegence melalui
-                        pendekatan data-driven.</p>
+                    <p><?= $visi[0]->misi; ?></p>
                     <div align="right">
                         <a href="#" class="primary-btn second-bg">Learn more</a>
                     </div>
@@ -81,9 +75,8 @@
                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                 <div class="footer__copyright__text">
                     <p>Copyright &copy; <script>
-                        document.write(new Date().getFullYear());
-                        </script> All rights reserved | </i> by <a href="https://kintekindo.net"
-                            target="_blank">Kintek</a></p>
+                            document.write(new Date().getFullYear());
+                        </script> All rights reserved | </i> by <a href="https://kintekindo.net" target="_blank">Kintek</a></p>
                 </div>
                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             </div>

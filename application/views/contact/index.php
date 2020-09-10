@@ -29,19 +29,19 @@
                             <div class="icon">
                                 <i class="fa fa-phone"></i>
                             </div>
-                            <p><span>kintekkreasi@gmail.com</span><span>nomor pak fikri</span></p>
+                            <p><span><?= $contact[0]->email ?></span><span><?= $contact[0]->telp ?></span></p>
                         </li>
                         <li>
                             <div class="icon">
                                 <i class="fa fa-map-marker"></i>
                             </div>
-                            <p>jln.buaran.kodiklat.tangerang selatan</p>
+                            <p><?= $contact[0]->alamat ?></p>
                         </li>
                         <li>
                             <div class="icon">
                                 <i class="fa fa-clock-o"></i>
                             </div>
-                            <p><span>Mon - Sat : 10:00 AM - 5:00 PM</span><span>Sunday: Closed</span></p>
+                            <p><span><?= $contact[0]->jam_kerja ?></span><span>Sunday: Closed</span></p>
                         </li>
                     </ul>
                 </div>
@@ -103,9 +103,8 @@
                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                 <div class="footer__copyright__text">
                     <p>Copyright &copy; <script>
-                        document.write(new Date().getFullYear());
-                        </script> All rights reserved | </i> by <a href="https://kintekindo.net"
-                            target="_blank">Kintek</a></p>
+                            document.write(new Date().getFullYear());
+                        </script> All rights reserved | </i> by <a href="https://kintekindo.net" target="_blank">Kintek</a></p>
                 </div>
                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             </div>

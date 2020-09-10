@@ -44,8 +44,11 @@ class Web extends CI_Controller
 
     public function contact()
     {
+        $this->load->model('Contact_model');
+        $data['contact'] = $this->Contact_model->getAll();
+
         $this->load->view('template/header');
-        $this->load->view('contact/index');
+        $this->load->view('contact/index', $data);
         $this->load->view('template/footer');
     }
 }

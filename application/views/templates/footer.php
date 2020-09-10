@@ -59,7 +59,7 @@
 
     <script>
         $(document).ready(function() {
-            $('#table-visi, #table-porto').DataTable();
+            $('#table-visi, #table-porto, #table-contact').DataTable();
 
         });
     </script>

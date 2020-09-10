@@ -1,0 +1,25 @@
+ <!-- Footer Section End -->
+
+ <!-- Search Begin -->
+ <div class="search-model">
+     <div class="h-100 d-flex align-items-center justify-content-center">
+         <div class="search-close-switch">+</div>
+         <form class="search-model-form">
+             <input type="text" id="search-input" placeholder="Search here.....">
+         </form>
+     </div>
+ </div>
+ <!-- Search End -->
+
+ <!-- Js Plugins -->
+ <script src="<?= base_url() ?>/vendor/dreams/js/jquery-3.3.1.min.js"></script>
+ <script src="<?= base_url() ?>/vendor/dreams/js/bootstrap.min.js"></script>
+ <script src="<?= base_url() ?>/vendor/dreams/js/jquery.nice-select.min.js"></script>
+ <script src="<?= base_url() ?>/vendor/dreams/js/jquery.magnific-popup.min.js"></script>
+ <script src="<?= base_url() ?>/vendor/dreams/js/jquery-ui.min.js"></script>
+ <script src="<?= base_url() ?>/vendor/dreams/js/jquery.slicknav.js"></script>
+ <script src="<?= base_url() ?>/vendor/dreams/js/owl.carousel.min.js"></script>
+ <script src="<?= base_url() ?>/vendor/dreams/js/main.js"></script>
+ </body>
+
+ </html>

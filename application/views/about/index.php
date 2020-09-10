@@ -28,26 +28,26 @@
             -deskripsi
          -->
         <div class="row">
-            <div class="col-lg-12">
-                <div class="team__item">
-                    <div class="team__item__img">
-                        <img src="<?php echo base_url() ?>assets/img/team/team-1.png" alt="">
-                    </div>
-                    <div class="team__item__text">
-                        <h5>Nama Team</h5>
-                        <span>Jabatan Team</span>
-                        <p>Deskripsi</p>
-                        <div class="team__item__social">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-dribbble"></i></a>
+            <?php foreach ($about as $data) : ?>
+                <div class="col-lg-12">
+                    <div class="team__item">
+                        <div class="team__item__img">
+                            <img src="<?php echo base_url() ?>assets/img/team/<?= $data->foto ?>" alt="">
+                        </div>
+                        <div class="team__item__text">
+                            <h5><?= $data->nama ?></h5>
+                            <span><?= $data->jabatan ?></span>
+                            <p><?= $data->deskripsi ?></p>
+                            <div class="team__item__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                <a href="#"><i class="fa fa-dribbble"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
-
+            <?php endforeach; ?>
         </div>
     </div>
 </section>
@@ -115,9 +115,8 @@
                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                 <div class="footer__copyright__text">
                     <p>Copyright &copy; <script>
-                        document.write(new Date().getFullYear());
-                        </script> All rights reserved | </i> by <a href="https://kintekindo.net"
-                            target="_blank">Kintek</a></p>
+                            document.write(new Date().getFullYear());
+                        </script> All rights reserved | </i> by <a href="https://kintekindo.net" target="_blank">Kintek</a></p>
                 </div>
                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             </div>

@@ -15,8 +15,10 @@ class Web extends CI_Controller
     }
     public function about()
     {
+        $this->load->model('About_model');
+        $data['about'] = $this->About_model->getAll();
         $this->load->view('template/header');
-        $this->load->view('about/index');
+        $this->load->view('about/index', $data);
         $this->load->view('template/footer');
     }
 
@@ -32,8 +34,11 @@ class Web extends CI_Controller
 
     public function portfolio()
     {
+        $this->load->model('Portofolio_model');
+        $data['portofolio'] = $this->Portofolio_model->getAll();
+
         $this->load->view('template/header');
-        $this->load->view('portofolio/index');
+        $this->load->view('portofolio/index', $data);
         $this->load->view('template/footer');
     }
 

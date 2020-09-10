@@ -41,7 +41,7 @@
     </li>
 
     <li class="nav-item">
-        <a class="nav-link" href="<?= base_url('portfolio') ?>">
+        <a class="nav-link" href="<?= base_url('portofolio') ?>">
             <i class="fas fa-fw fa-book"></i>
             <span>Portfolio</span></a>
     </li>

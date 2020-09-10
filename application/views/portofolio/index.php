@@ -28,21 +28,19 @@
             -deskripsi
          -->
         <div class="row">
-            <div class="col-lg-12">
-                <div class="team__item">
-                    <div class="team__item__img">
-                        <img src="<?php echo base_url() ?>assets/img/team/team-1.png" alt="">
-                    </div>
-                    <div class="team__item__text">
-                        <h5>Nama Prusahaan</h5>
-                        <p>Deskripsi : Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti a iure et
-                            dolorem incidunt quasi, ad consequatur quam odit dolor culpa excepturi, in dignissimos
-                            numquam itaque ea animi molestiae magnam.</p>
-
+            <?php foreach ($portofolio as $data) : ?>
+                <div class="col-lg-12">
+                    <div class="team__item">
+                        <div class="team__item__img">
+                            <img src="<?php echo base_url() ?>assets/img/portofolio/<?= $data->foto ?>" alt="">
+                        </div>
+                        <div class="team__item__text">
+                            <h5><?= $data->title ?></h5>
+                            <p><?= $data->detail ?></p>
+                        </div>
                     </div>
                 </div>
-            </div>
-
+            <?php endforeach; ?>
 
         </div>
     </div>
@@ -86,9 +84,8 @@
                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                 <div class="footer__copyright__text">
                     <p>Copyright &copy; <script>
-                        document.write(new Date().getFullYear());
-                        </script> All rights reserved | </i> by <a href="https://kintekindo.net"
-                            target="_blank">Kintek</a></p>
+                            document.write(new Date().getFullYear());
+                        </script> All rights reserved | </i> by <a href="https://kintekindo.net" target="_blank">Kintek</a></p>
                 </div>
                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             </div>

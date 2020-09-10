@@ -44,11 +44,11 @@
         </div>
         <nav class="offcanvas__menu mobile-menu">
             <ul>
-                <li><a href="<?= base_url('home/index') ?>">Home</a></li>
-                <li><a href="<?= base_url('about/index') ?>"> About</a></li>
-                <li><a href="<?= base_url('visi/index') ?>">Visi</a></li>
-                <li><a href="<?= base_url('portofolio/index') ?>">Portofolio</a></li>
-                <li><a href="<?= base_url('contact/index') ?>">Contact</a></li>
+                <li><a href="<?= base_url('web/index') ?>">Home</a></li>
+                <li><a href="<?= base_url('web/about') ?>"> About</a></li>
+                <li><a href="<?= base_url('web/visi') ?>">Visi</a></li>
+                <li><a href="<?= base_url('web/portfolio') ?>">Portofolio</a></li>
+                <li><a href="<?= base_url('web/contact') ?>">Contact</a></li>
             </ul>
         </nav>
         <div id="mobile-menu-wrap"></div>
@@ -76,11 +76,11 @@
                 <div class="col-lg-5">
                     <nav class="header__menu">
                         <ul>
-                            <li class="active"><a href="<?= base_url('home/index') ?>">Home</a></li>
-                            <li><a href="<?= base_url('about/index') ?>"> About</a></li>
-                            <li><a href="<?= base_url('visi/index') ?>">Visi</a></li>
-                            <li><a href="<?= base_url('portofolio/index') ?>">Portofolio</a></li>
-                            <li><a href="<?= base_url('contact/index') ?>">Contact</a></li>
+                            <li class="active"><a href="<?= base_url('web/index') ?>">Home</a></li>
+                            <li><a href="<?= base_url('web/about') ?>"> About</a></li>
+                            <li><a href="<?= base_url('web/visi') ?>">Visi</a></li>
+                            <li><a href="<?= base_url('web/portfolio') ?>">Portofolio</a></li>
+                            <li><a href="<?= base_url('web/contact') ?>">Contact</a></li>
                         </ul>
                     </nav>
                 </div>

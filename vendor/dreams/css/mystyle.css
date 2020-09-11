@@ -1,0 +1,24 @@
+.logosaya {
+	left: -400px;
+	top: 0;
+	width: 580px;
+	height: 100%;
+	background: #e6e4dd;
+	content: "";
+	z-index: -1;
+	-webkit-clip-path: polygon(0% 0%, 100% 0%, 96% 100%, 0% 100%);
+	clip-path: polygon(0% 0%, 100% 0%, 96% 100%, 0% 100%);
+}
+
+    .header {
+        background:rgb(4, 4, 29);
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+
+    .header__logo {
+	padding: 33px 0 31px;
+	position: relative;
+	z-index: 1;
+}

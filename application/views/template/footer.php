@@ -6,7 +6,7 @@
             <div class="row">
 
                 <div class="col-lg-3 col-md-6 footer-contact">
-                    <h3>Logo<span>.</span></h3>
+                    <a href="index.html" class="logo mr-auto"><img src="<?= base_url() ?>assets/img/profil/logonew.png" alt=""></a>
                 </div>
                 <div class="col-lg-3 col-md-6 footer-contact">
                     <h3>Kintek<span>.</span></h3>

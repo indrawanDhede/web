@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Kintek | Home</title>
+    <title>Kintek | <?= $title; ?></title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -47,15 +47,35 @@
 
             <!-- <h1 class="logo mr-auto"><a href="index.html">Kintek<span>.</span></a></h1> -->
             <!-- Uncomment below if you prefer to use an image logo -->
-            <a href="index.html" class="logo mr-auto"><img src="<?= base_url() ?>assets/img/profil/30.png" alt=""></a>
+            <a href="<?= base_url('web') ?>" class="logo mr-auto"><img src="<?= base_url() ?>assets/img/profil/30.png" alt=""></a>
 
             <nav class="nav-menu d-none d-lg-block">
                 <ul>
-                    <li class="active"><a href="<?= base_url('web') ?>">Home</a></li>
-                    <li><a href="<?= base_url('web/about') ?>">About</a></li>
-                    <li><a href="<?= base_url('web/services') ?>">Services</a></li>
-                    <li><a href="<?= base_url('web/portofolio') ?>">Portfolio</a></li>
-                    <li><a href="<?= base_url('web/contact') ?>">Contact</a></li>
+                    <?php if ($title == 'Home') : ?>
+                        <li class="active"><a href="<?= base_url('web') ?>">Home</a></li>
+                    <?php else : ?>
+                        <li><a href="<?= base_url('web') ?>">Home</a></li>
+                    <?php endif ?>
+                    <?php if ($title == 'About') : ?>
+                        <li class="active"><a href="<?= base_url('web/about') ?>">About</a></li>
+                    <?php else : ?>
+                        <li><a href="<?= base_url('web/about') ?>">About</a></li>
+                    <?php endif ?>
+                    <?php if ($title == 'Services') : ?>
+                        <li class="active"><a href="<?= base_url('web/services') ?>">Services</a></li>
+                    <?php else : ?>
+                        <li><a href="<?= base_url('web/services') ?>">Services</a></li>
+                    <?php endif ?>
+                    <?php if ($title == 'Portfolio') : ?>
+                        <li class="active"><a href="<?= base_url('web/portofolio') ?>">Portfolio</a></li>
+                    <?php else : ?>
+                        <li><a href="<?= base_url('web/portofolio') ?>">Portfolio</a></li>
+                    <?php endif ?>
+                    <?php if ($title == 'Contact') : ?>
+                        <li class="active"><a href="<?= base_url('web/contact') ?>">Contact</a></li>
+                    <?php else : ?>
+                        <li><a href="<?= base_url('web/contact') ?>">Contact</a></li>
+                    <?php endif ?>
 
                 </ul>
             </nav><!-- .nav-menu -->

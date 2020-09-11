@@ -2,7 +2,7 @@
     <br /><br /><br /><br />
 
     <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio">
+    <section id="portfolio" class="portfolio section-bg">
         <div class="container" data-aos="fade-up">
             <div class="section-title">
                 <h1> <span>Our Portfolio</span></h1>
@@ -12,108 +12,28 @@
                 </p>
             </div>
 
-            <div class="row" data-aos="fade-up" data-aos-delay="100">
-                <div class="col-lg-12 d-flex justify-content-center">
-                    <ul id="portfolio-flters">
-                        <li data-filter="*" class="filter-active">All</li>
-                        <li data-filter=".filter-app">App</li>
-                        <li data-filter=".filter-card">Card</li>
-                        <li data-filter=".filter-web">Web</li>
-                    </ul>
-                </div>
-            </div>
+            <section id="services" class="services">
+                <div class="container" data-aos="fade-up">
 
-            <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                    <img src="<?= base_url() ?>/vendor/bizland/assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="" />
-                    <div class="portfolio-info">
-                        <h4>App 1</h4>
-                        <p>App</p>
-                        <a href="<?= base_url() ?>/vendor/bizland/assets/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
-                        <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                    <div class="row">
+                        <?php foreach ($portofolio as $data) : ?>
+                            <div class="col-md-6 mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="100">
+                                <div class="icon-box data-aos=" fade-up" data-aos-delay="100"">
+                                <div class=" porto-img">
+                                    <img src="<?= base_url() ?>/assets/img/portofolio/<?= $data->foto ?>" class="img-fluid" alt="">
+                                </div>
+                                <h4><a href=""><?= $data->title ?></a></h4>
+                                <p><?= $data->detail ?></p>
+                            </div>
                     </div>
+                <?php endforeach ?>
+
+
                 </div>
 
-                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                    <img src="<?= base_url() ?>/vendor/bizland/assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="" />
-                    <div class="portfolio-info">
-                        <h4>Web 3</h4>
-                        <p>Web</p>
-                        <a href="<?= base_url() ?>/vendor/bizland/assets/img/portfolio/portfolio-2.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-                        <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                    <img src="<?= base_url() ?>/vendor/bizland/assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="" />
-                    <div class="portfolio-info">
-                        <h4>App 2</h4>
-                        <p>App</p>
-                        <a href="<?= base_url() ?>/vendor/bizland/assets/img/portfolio/portfolio-3.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
-                        <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                    <img src="<?= base_url() ?>/vendor/bizland/assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="" />
-                    <div class="portfolio-info">
-                        <h4>Card 2</h4>
-                        <p>Card</p>
-                        <a href="<?= base_url() ?>/vendor/bizland/assets/img/portfolio/portfolio-4.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
-                        <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                    <img src="<?= base_url() ?>/vendor/bizland/assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="" />
-                    <div class="portfolio-info">
-                        <h4>Web 2</h4>
-                        <p>Web</p>
-                        <a href="<?= base_url() ?>/vendor/bizland/assets/img/portfolio/portfolio-5.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
-                        <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                    <img src="<?= base_url() ?>/vendor/bizland/assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="" />
-                    <div class="portfolio-info">
-                        <h4>App 3</h4>
-                        <p>App</p>
-                        <a href="<?= base_url() ?>/vendor/bizland/assets/img/portfolio/portfolio-6.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
-                        <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                    <img src="<?= base_url() ?>/vendor/bizland/assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="" />
-                    <div class="portfolio-info">
-                        <h4>Card 1</h4>
-                        <p>Card</p>
-                        <a href="<?= base_url() ?>/vendor/bizland/assets/img/portfolio/portfolio-7.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
-                        <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                    <img src="<?= base_url() ?>/vendor/bizland/assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="" />
-                    <div class="portfolio-info">
-                        <h4>Card 3</h4>
-                        <p>Card</p>
-                        <a href="<?= base_url() ?>/vendor/bizland/assets/img/portfolio/portfolio-8.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
-                        <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                    <img src="<?= base_url() ?>/vendor/bizland/assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="" />
-                    <div class="portfolio-info">
-                        <h4>Web 3</h4>
-                        <p>Web</p>
-                        <a href="<?= base_url() ?>/vendor/bizland/assets/img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-                        <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-                    </div>
-                </div>
-            </div>
         </div>
+    </section><!-- End Services Section -->
+
+    </div>
     </section>
     <!-- End Portfolio Section -->

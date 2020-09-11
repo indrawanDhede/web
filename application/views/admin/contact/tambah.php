@@ -11,6 +11,11 @@
                 <div class="card-body">
                     <form action="" method="post">
                         <div class="form-group">
+                            <label for="title">Title</label>
+                            <input type="text" class="form-control" name="title" id="title">
+                            <small class="form-text text-danger"><?= form_error('title'); ?></small>
+                        </div>
+                        <div class="form-group">
                             <label for="email">Email</label>
                             <input type="text" class="form-control" name="email" id="email">
                             <small class="form-text text-danger"><?= form_error('email'); ?></small>

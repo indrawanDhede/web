@@ -22,11 +22,12 @@
                     <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
                         <div class="icon"></i></div>
                         <h4 class="title"><a href="">Our Vision</a></h4>
-                        <p class="description"> Menjadi sebuah perusahaan teknologi informasi dan komunikasi yang mampu bersaing dalam dunia global saat ini.
-                        </p>
-                        <br>
-                        <p class="description"> Menjadi sebuah perusahaan yang mampu memberikan kontribusi baik dalam bidang penelitian teknologi informasi dan komunikasi maupun pengabdian kepada masyarakat.
-                        </p>
+                        <?php foreach ($visi as $data) : ?>
+                            <p class="description"> <?= $data->visi ?>
+                            </p>
+                            <br>
+                        <?php endforeach ?>
+
 
 
                     </div>
@@ -36,11 +37,12 @@
                     <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
                         <div class="icon"></i></div>
                         <h4 class="title"><a href="">Our Mission</a></h4>
-                        <p class="description"> Mengedepankan profesional kemampuan individu, dan tim dalam menghasilkan produk-produk unggulan.
-                        </p>
-                        <br>
-                        <p class="description"> Memberikan solusi yang optional kepada mitra kerja dalam mengatasi berbagai permasalahan di dunia teknologi informasi.
-                        </p>
+                        <?php foreach ($visi as $data) : ?>
+                            <p class="description"> <?= $data->misi ?>
+                            </p>
+                            <br>
+                        <?php endforeach; ?>
+
                     </div>
                 </div>
 

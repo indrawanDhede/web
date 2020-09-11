@@ -15,6 +15,7 @@
                 <table class="table table-bordered display" id="table-contact" width="100%" cellspacing="0">
                     <thead>
                         <tr>
+                            <th scope="col">Title</th>
                             <th scope="col">Email</th>
                             <th scope="col">Telp</th>
                             <th scope="col">Alamat</th>
@@ -28,6 +29,7 @@
 
                         <?php foreach ($data as $contact) : ?>
                             <tr>
+                                <td><?= $contact->title ?></td>
                                 <td><?= $contact->email ?></td>
                                 <td><?= $contact->telp ?></td>
                                 <td><?= $contact->alamat ?></td>

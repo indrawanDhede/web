@@ -30,6 +30,7 @@ class Contact extends CI_Controller
     {
         $data['title'] = 'Form Tambah';
 
+        $this->form_validation->set_rules('title', 'Title', 'required');
         $this->form_validation->set_rules('email', 'Email', 'required');
         $this->form_validation->set_rules('telp', 'Telp', 'required');
         $this->form_validation->set_rules('alamat', 'Alamat', 'required');
@@ -57,6 +58,7 @@ class Contact extends CI_Controller
         $data['title'] = 'Form Edit';
         $data['contact'] = $this->Contact_model->getById($id);
 
+        $this->form_validation->set_rules('title', 'Title', 'required');
         $this->form_validation->set_rules('email', 'Email', 'required');
         $this->form_validation->set_rules('telp', 'Telp', 'required');
         $this->form_validation->set_rules('alamat', 'Alamat', 'required');

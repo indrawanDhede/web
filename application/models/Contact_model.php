@@ -9,11 +9,13 @@ class Contact_model extends CI_Model
     }
     public function simpan_data()
     {
+        $title = $this->input->post('title', true);
         $email = $this->input->post('email', true);
         $telp = $this->input->post('telp', true);
         $alamat = $this->input->post('alamat', true);
         $jam_kerja = $this->input->post('jam_kerja', true);
         $query = [
+            'title' => $title,
             'email' => $email,
             'telp' => $telp,
             'alamat' => $alamat,
@@ -31,11 +33,13 @@ class Contact_model extends CI_Model
 
     public function update_data()
     {
+        $title = $this->input->post('title', true);
         $email = $this->input->post('email', true);
         $telp = $this->input->post('telp', true);
         $alamat = $this->input->post('alamat', true);
         $jam_kerja = $this->input->post('jam_kerja', true);
         $query = [
+            'title' => $title,
             'email' => $email,
             'telp' => $telp,
             'alamat' => $alamat,

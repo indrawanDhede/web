@@ -18,8 +18,8 @@ class Web extends CI_Controller
     public function index()
     {
         $path = 'Home/index';
-        $this->load->model('Service_model');
-        $data['service'] = $this->Service_model->getAll();
+        $this->load->model('Visi_model');
+        $data['visi'] = $this->Visi_model->getAll();
 
         $this->render_view($path, $data);
     }

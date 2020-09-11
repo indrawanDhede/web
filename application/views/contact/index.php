@@ -2,14 +2,12 @@
     <br><br><br><br><br>
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
+
         <div class="container" data-aos="fade-up">
 
             <div class="section-title">
                 <h3><span>Contact Us</span></h3>
-                <p>Setelah anda setuju secara konseptual, kami menandatangani kontrak. <br>
-                    Selalu tahu anda berada ditangan yang tepat. <br>
-                    Kami telah berada di sini selama ini dan masih berkembang pesat, <br>
-                    sehingga anda yakin bahwa kami dapat mendukung anda dalam jangka panjang
+                <p><?= $contact[0]->title ?>
                 </p>
             </div>
 
@@ -18,7 +16,7 @@
                     <div class="info-box mb-4">
                         <i class="bx bx-map"></i>
                         <h3>Our Address</h3>
-                        <p> Jl. Kodiklat TNI, Pamulang Selatan <br><br></p>
+                        <p><?= $contact[0]->alamat ?><br><br></p>
                     </div>
                 </div>
 
@@ -26,7 +24,7 @@
                     <div class="info-box  mb-4">
                         <i class="bx bx-envelope"></i>
                         <h3>Email Us</h3>
-                        <p>info@kintekindo.net</p>
+                        <p><?= $contact[0]->email ?></p>
                     </div>
                 </div>
 
@@ -34,7 +32,7 @@
                     <div class="info-box  mb-4">
                         <i class="bx bx-phone-call"></i>
                         <h3>Call Us</h3>
-                        <p>+62 811 8333 433</p>
+                        <p><?= $contact[0]->telp ?></p>
                     </div>
                 </div>
 

@@ -12,6 +12,11 @@
                     <form action="" method="post">
                         <input type="hidden" name="id_contact" value="<?= $contact->id_contact; ?>">
                         <div class="form-group">
+                            <label for="title">Title</label>
+                            <input type="text" class="form-control" name="title" id="title" value="<?= $contact->title; ?>">
+                            <small class="form-text text-danger"><?= form_error('title'); ?></small>
+                        </div>
+                        <div class="form-group">
                             <label for="email">Email</label>
                             <input type="text" class="form-control" name="email" id="email" value="<?= $contact->email; ?>">
                             <small class="form-text text-danger"><?= form_error('email'); ?></small>

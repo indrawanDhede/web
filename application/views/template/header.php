@@ -79,7 +79,7 @@
                             <li class="active"><a href="<?= base_url('web/index') ?>">Home</a></li>
                             <li><a href="<?= base_url('web/about') ?>"> About</a></li>
                             <li><a href="<?= base_url('web/visi') ?>">Visi</a></li>
-                            <li><a href="<?= base_url('web/portfolio') ?>">Portofolio</a></li>
+                            <li><a href="<?= base_url('web/portofolio') ?>">Portofolio</a></li>
                             <li><a href="<?= base_url('web/contact') ?>">Contact</a></li>
                         </ul>
                     </nav>

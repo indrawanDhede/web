@@ -1,25 +1,71 @@
- <!-- Footer Section End -->
+<!-- ======= Footer ======= -->
+<footer id="footer">
 
- <!-- Search Begin -->
- <div class="search-model">
-     <div class="h-100 d-flex align-items-center justify-content-center">
-         <div class="search-close-switch">+</div>
-         <form class="search-model-form">
-             <input type="text" id="search-input" placeholder="Search here.....">
-         </form>
-     </div>
- </div>
- <!-- Search End -->
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
 
- <!-- Js Plugins -->
- <script src="<?= base_url() ?>/vendor/dreams/js/jquery-3.3.1.min.js"></script>
- <script src="<?= base_url() ?>/vendor/dreams/js/bootstrap.min.js"></script>
- <script src="<?= base_url() ?>/vendor/dreams/js/jquery.nice-select.min.js"></script>
- <script src="<?= base_url() ?>/vendor/dreams/js/jquery.magnific-popup.min.js"></script>
- <script src="<?= base_url() ?>/vendor/dreams/js/jquery-ui.min.js"></script>
- <script src="<?= base_url() ?>/vendor/dreams/js/jquery.slicknav.js"></script>
- <script src="<?= base_url() ?>/vendor/dreams/js/owl.carousel.min.js"></script>
- <script src="<?= base_url() ?>/vendor/dreams/js/main.js"></script>
- </body>
+                <div class="col-lg-3 col-md-6 footer-contact">
+                    <h3>Logo<span>.</span></h3>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-contact">
+                    <h3>Kintek<span>.</span></h3>
+                    <p>
+                        Jl. Kodiklat TNI <br>
+                        gang gowok<br>
+                        Pamulang Selatan <br><br>
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-contact">
+                    <h3>Contact<span>.</span></h3>
+                    <p>
+                        <strong>Phone:</strong> +62 811 8333 433<br>
+                        <strong>Email:</strong> info@kintekindo.net<br>
+                    </p>
+                </div>
 
- </html>
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-4">
+        <div class="copyright">
+            &copy; Copyright <strong><span>Kintek</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+            Designed by <a href="https://kintekindo.net/">Kintek</a>
+        </div>
+    </div>
+</footer><!-- End Footer -->
+
+<div id="preloader"></div>
+<a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+<!-- Vendor JS Files -->
+<script src="<?= base_url() ?>/vendor/bizland/assets/vendor/jquery/jquery.min.js"></script>
+<script src="<?= base_url() ?>/vendor/bizland/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="<?= base_url() ?>/vendor/bizland/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+<script src="<?= base_url() ?>/vendor/bizland/assets/vendor/php-email-form/validate.js"></script>
+<script src="<?= base_url() ?>/vendor/bizland/assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+<script src="<?= base_url() ?>/vendor/bizland/assets/vendor/counterup/counterup.min.js"></script>
+<script src="<?= base_url() ?>/vendor/bizland/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+<script src="<?= base_url() ?>/vendor/bizland/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="<?= base_url() ?>/vendor/bizland/assets/vendor/venobox/venobox.min.js"></script>
+<script src="<?= base_url() ?>/vendor/bizland/assets/vendor/aos/aos.js"></script>
+
+<!-- Template Main JS File -->
+<script src="<?= base_url() ?>/vendor/bizland/assets/js/main.js"></script>
+
+</body>
+
+</html>

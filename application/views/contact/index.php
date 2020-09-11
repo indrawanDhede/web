@@ -1,113 +1,82 @@
-<!-- Breadcrumb Begin -->
-<div class="breadcrumb-option">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="breadcrumb__links">
-                    <a href="./index.html"><i class="fa fa-home"></i> Home</a>
-                    <span>Contact</span>
-                </div>
+<main id="main">
+    <br><br><br><br><br>
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+                <h3><span>Contact Us</span></h3>
+                <p>Setelah anda setuju secara konseptual, kami menandatangani kontrak. <br>
+                    Selalu tahu anda berada ditangan yang tepat. <br>
+                    Kami telah berada di sini selama ini dan masih berkembang pesat, <br>
+                    sehingga anda yakin bahwa kami dapat mendukung anda dalam jangka panjang
+                </p>
             </div>
-        </div>
-    </div>
-</div>
-<!-- Breadcrumb End -->
 
-<!-- Map Section Begin -->
-
-<!-- Map Section End -->
-
-<!-- Contact Section Begin -->
-<section class="contact spad">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4 col-md-4">
-                <div class="contact__address">
-                    <h4>Contact info</h4>
-                    <ul>
-                        <li>
-                            <div class="icon">
-                                <i class="fa fa-phone"></i>
-                            </div>
-                            <p><span><?= $contact[0]->email ?></span><span><?= $contact[0]->telp ?></span></p>
-                        </li>
-                        <li>
-                            <div class="icon">
-                                <i class="fa fa-map-marker"></i>
-                            </div>
-                            <p><?= $contact[0]->alamat ?></p>
-                        </li>
-                        <li>
-                            <div class="icon">
-                                <i class="fa fa-clock-o"></i>
-                            </div>
-                            <p><span><?= $contact[0]->jam_kerja ?></span><span>Sunday: Closed</span></p>
-                        </li>
-                    </ul>
+            <div class="row" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-6">
+                    <div class="info-box mb-4">
+                        <i class="bx bx-map"></i>
+                        <h3>Our Address</h3>
+                        <p> Jl. Kodiklat TNI, Pamulang Selatan <br><br></p>
+                    </div>
                 </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="info-box  mb-4">
+                        <i class="bx bx-envelope"></i>
+                        <h3>Email Us</h3>
+                        <p>info@kintekindo.net</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="info-box  mb-4">
+                        <i class="bx bx-phone-call"></i>
+                        <h3>Call Us</h3>
+                        <p>+62 811 8333 433</p>
+                    </div>
+                </div>
+
             </div>
-            <div class="col-lg-8 col-md-8">
-                <div class="contact__form">
-                    <h4>Leave a message</h4>
-                    <form action="#">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <input type="text" placeholder="Name">
+
+            <div class="row" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="col-lg-6 ">
+                    <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
+                </div>
+
+                <div class="col-lg-6">
+                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                        <div class="form-row">
+                            <div class="col form-group">
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                <div class="validate"></div>
                             </div>
-                            <div class="col-lg-6">
-                                <input type="text" placeholder="Email">
+                            <div class="col form-group">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                                <div class="validate"></div>
                             </div>
                         </div>
-                        <textarea placeholder="Your message"></textarea>
-                        <button type="submit" class="site-btn">Find an agent</button>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                            <div class="validate"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                            <div class="validate"></div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="loading">Loading</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">Your message has been sent. Thank you!</div>
+                        </div>
+                        <div class="text-center"><button type="submit">Send Message</button></div>
                     </form>
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Contact Section End -->
 
-<footer class="footer ">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-md-2 col-sm-6">
-                <div class="footer__widget right-column">
-                    <h5>COMPANY</h5>
-                    <ul>
-                        <li><a href="<?= base_url('home/index') ?>">Home</a></li>
-                        <li><a href="<?= base_url('about/index') ?>">About Us</a></li>
-                        <li><a href="<?= base_url('portofolio/index') ?>">Portofolio</a></li>
-                        <li><a href="<?= base_url('contact/index') ?>">Contact</a></li>
-
-                    </ul>
-                </div>
             </div>
 
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="footer__widget right-column" style="color: blanchedalmond;">
-                    <h5>ADDRESS</h5>
-                    <p style="color: blanchedalmond;">Address : 15 jln.buaran_kodiklat, New York, NY 12032, United
-                        States of
-                        America</p>
-                    <ul>
-                        <li>Phone : +0 (123) 456789</li>
-                        <li>Email : kintekkreasi@gmail.com</li>
-                        <li>Fax : +8 (123) 456 789</li>
-                    </ul>
-                </div>
-            </div>
         </div>
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                <div class="footer__copyright__text">
-                    <p>Copyright &copy; <script>
-                            document.write(new Date().getFullYear());
-                        </script> All rights reserved | </i> by <a href="https://kintekindo.net" target="_blank">Kintek</a></p>
-                </div>
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            </div>
-        </div>
-    </div>
-</footer>
+    </section><!-- End Contact Section -->
+</main>

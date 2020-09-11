@@ -1,95 +1,119 @@
-<br><br><br>
-<!-- Breadcrumb Begin -->
-<div class="breadcrumb-option breadcrumb--about" style="color: black;">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="breadcrumb__links">
-                    <a href="./index.html" style="color: black;"><i class="fa fa-home"></i> Home</a>
+<main id="main">
+    <br /><br /><br /><br />
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+        <div class="container" data-aos="fade-up">
+            <div class="section-title">
+                <h1> <span>Our Portfolio</span></h1>
+                <p>
+                    Ut possimus qui ut temporibus culpa velit eveniet modi omnis est
+                    adipisci expedita at voluptas atque vitae autem.
+                </p>
+            </div>
+
+            <div class="row" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-12 d-flex justify-content-center">
+                    <ul id="portfolio-flters">
+                        <li data-filter="*" class="filter-active">All</li>
+                        <li data-filter=".filter-app">App</li>
+                        <li data-filter=".filter-card">Card</li>
+                        <li data-filter=".filter-web">Web</li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-<!-- Breadcrumb End -->
 
-<!-- About Hero Section End -->
-
-<!-- Team Section Begin -->
-<section class="team spad">
-    <div class="container">
-
-        <h1 align="center"> <b> Our Portofolio </b></h1>
-        <br>
-        <!-- foreach data
-            -Nama
-            -jabatan
-            -foto
-            -deskripsi
-         -->
-        <div class="row">
-            <?php foreach ($portofolio as $data) : ?>
-                <div class="col-lg-12">
-                    <div class="team__item">
-                        <div class="team__item__img">
-                            <img src="<?php echo base_url() ?>assets/img/portofolio/<?= $data->foto ?>" alt="">
-                        </div>
-                        <div class="team__item__text">
-                            <h5><?= $data->title ?></h5>
-                            <p><?= $data->detail ?></p>
-                        </div>
+            <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <img src="<?= base_url() ?>/vendor/bizland/assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="" />
+                    <div class="portfolio-info">
+                        <h4>App 1</h4>
+                        <p>App</p>
+                        <a href="<?= base_url() ?>/vendor/bizland/assets/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+                        <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
                     </div>
                 </div>
-            <?php endforeach; ?>
 
-        </div>
-    </div>
-</section>
-<!-- Feature Section Begin -->
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                    <img src="<?= base_url() ?>/vendor/bizland/assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="" />
+                    <div class="portfolio-info">
+                        <h4>Web 3</h4>
+                        <p>Web</p>
+                        <a href="<?= base_url() ?>/vendor/bizland/assets/img/portfolio/portfolio-2.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+                        <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                    </div>
+                </div>
 
-<!-- Team Section End -->
-<!-- Footer Section Begin -->
-<footer class="footer ">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-md-2 col-sm-6">
-                <div class="footer__widget right-column">
-                    <h5>COMPANY</h5>
-                    <ul>
-                        <li><a href="<?= base_url('home/index') ?>">Home</a></li>
-                        <li><a href="<?= base_url('about/index') ?>">About Us</a></li>
-                        <li><a href="<?= base_url('portofolio/index') ?>">Portofolio</a></li>
-                        <li><a href="<?= base_url('contact/index') ?>">Contact</a></li>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <img src="<?= base_url() ?>/vendor/bizland/assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="" />
+                    <div class="portfolio-info">
+                        <h4>App 2</h4>
+                        <p>App</p>
+                        <a href="<?= base_url() ?>/vendor/bizland/assets/img/portfolio/portfolio-3.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
+                        <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                    </div>
+                </div>
 
-                    </ul>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                    <img src="<?= base_url() ?>/vendor/bizland/assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="" />
+                    <div class="portfolio-info">
+                        <h4>Card 2</h4>
+                        <p>Card</p>
+                        <a href="<?= base_url() ?>/vendor/bizland/assets/img/portfolio/portfolio-4.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
+                        <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                    <img src="<?= base_url() ?>/vendor/bizland/assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="" />
+                    <div class="portfolio-info">
+                        <h4>Web 2</h4>
+                        <p>Web</p>
+                        <a href="<?= base_url() ?>/vendor/bizland/assets/img/portfolio/portfolio-5.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
+                        <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <img src="<?= base_url() ?>/vendor/bizland/assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="" />
+                    <div class="portfolio-info">
+                        <h4>App 3</h4>
+                        <p>App</p>
+                        <a href="<?= base_url() ?>/vendor/bizland/assets/img/portfolio/portfolio-6.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
+                        <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                    <img src="<?= base_url() ?>/vendor/bizland/assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="" />
+                    <div class="portfolio-info">
+                        <h4>Card 1</h4>
+                        <p>Card</p>
+                        <a href="<?= base_url() ?>/vendor/bizland/assets/img/portfolio/portfolio-7.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
+                        <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                    <img src="<?= base_url() ?>/vendor/bizland/assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="" />
+                    <div class="portfolio-info">
+                        <h4>Card 3</h4>
+                        <p>Card</p>
+                        <a href="<?= base_url() ?>/vendor/bizland/assets/img/portfolio/portfolio-8.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
+                        <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                    <img src="<?= base_url() ?>/vendor/bizland/assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="" />
+                    <div class="portfolio-info">
+                        <h4>Web 3</h4>
+                        <p>Web</p>
+                        <a href="<?= base_url() ?>/vendor/bizland/assets/img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+                        <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                    </div>
                 </div>
             </div>
-
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="footer__widget right-column" style="color: blanchedalmond;">
-                    <h5>ADDRESS</h5>
-                    <p style="color: blanchedalmond;">Address : 15 jln.buaran_kodiklat, New York, NY 12032, United
-                        States of
-                        America</p>
-                    <ul>
-                        <li>Phone : +0 (123) 456789</li>
-                        <li>Email : kintekkreasi@gmail.com</li>
-                        <li>Fax : +8 (123) 456 789</li>
-                    </ul>
-                </div>
-            </div>
         </div>
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                <div class="footer__copyright__text">
-                    <p>Copyright &copy; <script>
-                            document.write(new Date().getFullYear());
-                        </script> All rights reserved | </i> by <a href="https://kintekindo.net" target="_blank">Kintek</a></p>
-                </div>
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            </div>
-        </div>
-    </div>
-</footer>
-<!-- Footer Section End -->
+    </section>
+    <!-- End Portfolio Section -->

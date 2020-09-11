@@ -33,9 +33,9 @@ class Web extends CI_Controller
         $this->render_view($path, $data);
     }
 
-    public function visi()
+    public function services()
     {
-        $path = 'visi/index';
+        $path = 'services/index';
         $this->load->model('Visi_model');
         $data['visi'] = $this->Visi_model->getAll();
 

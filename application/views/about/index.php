@@ -1,126 +1,114 @@
-<br><br><br>
-<!-- Breadcrumb Begin -->
-<div class="breadcrumb-option breadcrumb--about" style="color: black;">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="breadcrumb__links">
-                    <a href="./index.html" style="color: black;"><i class="fa fa-home"></i> Home</a>
+<main id="main">
+    <br><br><br><br><br>
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+                <h1><span>About Us</span></h1>
+                <!-- <h3>Find Out More <span>About Us</span></h3> -->
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6" data-aos="zoom-out" data-aos-delay="100">
+                    <img src="<?= base_url() ?>/vendor/bizland/assets/img/about.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Who We Are?</h3>
+                    <p class="font-italic">
+                        PT. Kreatif Integlegensi Teknologi adalah perusahaan yang bergerak di bidang penyedia solusi teknologi informasi yang berfokus pada pnegembangan solusi intelegensi bisnis.
+                    </p>
+                    <ul>
+                        <li>
+                            <i class="bx bx-store-alt"></i>
+                            <div>
+                                <h5>Kami membantu perusahaan anda untuk melakukan implementasi Business Intellegence melalui pendekatan data-driven.</h5>
+                                <!-- <p>Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade</p> -->
+                            </div>
+                        </li>
+                        <li>
+                            <i class="bx bx-images"></i>
+                            <div>
+                                <h5>Kami melakukan inovasi dan kolaborasi antar disiplin ilmu untuk menemukan knowlegde yang tersembunyi pada data.</h5>
+                                <!-- <p>Quo totam dolorum at pariatur aut distinctio dolorum laudantium illo direna pasata redi</p> -->
+                            </div>
+                        </li>
+                    </ul>
+                    <p>
+                        Knowlegde yang tersembunyi ini dapat membantu perusahaan anda untuk mengetahui potensi-potensi yang dapat meningkatkan kinerja pada kegiatan operasional bisnis perusahaan, sehingga proses pengambilan keputusan menjadi lebih cepat dan efisien.
+                    </p>
                 </div>
             </div>
+
         </div>
-    </div>
-</div>
-<!-- Breadcrumb End -->
+    </section><!-- End About Section -->
 
-<!-- About Hero Section End -->
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
+        <div class="container" data-aos="fade-up">
 
-<!-- Team Section Begin -->
-<section class="team spad">
-    <div class="container">
+            <div class="section-title">
+                <h3>Our Hardworking <span>Team</span></h3>
+                <p>Mengedepankan profesional kemampuan individu, dan tim dalam menghasilkan produk-produk unggulan.</p>
+            </div>
 
-        <h1 align="center"> <b> Our Team </b></h1>
-        <br>
-        <!-- foreach data
-            -Nama
-            -jabatan
-            -foto
-            -deskripsi
-         -->
-        <div class="row">
-            <?php foreach ($about as $data) : ?>
-                <div class="col-lg-12">
-                    <div class="team__item">
-                        <div class="team__item__img">
-                            <img src="<?php echo base_url() ?>assets/img/team/<?= $data->foto ?>" alt="">
+            <div class="row">
+
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+                    <div class="member">
+                        <div class="member-img">
+                            <img src="<?= base_url() ?>/vendor/bizland/assets/img/team/team-1.jpg" class="img-fluid" alt="">
+
                         </div>
-                        <div class="team__item__text">
-                            <h5><?= $data->nama ?></h5>
-                            <span><?= $data->jabatan ?></span>
-                            <p><?= $data->deskripsi ?></p>
-                            <div class="team__item__social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
-                                <a href="#"><i class="fa fa-dribbble"></i></a>
-                            </div>
+                        <div class="member-info">
+                            <h4>Walter White</h4>
+                            <span>Chief Executive Officer</span>
                         </div>
                     </div>
                 </div>
-            <?php endforeach; ?>
-        </div>
-    </div>
-</section>
-<!-- Feature Section Begin -->
-<section class="feature feature--about spad">
-    <div class="container">
-        <h1 align="center"> <b> Our Services</b></h1>
-        <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-6">
-                <div class="feature__item">
-                    <img src="<?php echo base_url() ?>assets/img/feature/fa-1.png" alt="">
-                    <h5>CUSTOM SOFTWARE DEVELOPMENT
-                    </h5>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-6">
-                <div class="feature__item">
-                    <img src="<?php echo base_url() ?>/assets/img/feature/fa-2.png" alt="">
-                    <h5>MOBILE DEVELOPER</h5>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-6">
-                <div class="feature__item">
-                    <img src="<?php echo base_url() ?>assets/img/feature/fa-3.png" alt="">
-                    <h5>SOFTWARE ENGINEER</h5>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Team Section End -->
-<!-- Footer Section Begin -->
-<footer class="footer ">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-md-2 col-sm-6">
-                <div class="footer__widget right-column">
-                    <h5>COMPANY</h5>
-                    <ul>
-                        <li><a href="<?= base_url('home/index') ?>">Home</a></li>
-                        <li><a href="<?= base_url('about/index') ?>">About Us</a></li>
-                        <li><a href="<?= base_url('portofolio/index') ?>">Portofolio</a></li>
-                        <li><a href="<?= base_url('contact/index') ?>">Contact</a></li>
 
-                    </ul>
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+                    <div class="member">
+                        <div class="member-img">
+                            <img src="<?= base_url() ?>/vendor/bizland/assets/img/team/team-2.jpg" class="img-fluid" alt="">
+
+                        </div>
+                        <div class="member-info">
+                            <h4>Sarah Jhonson</h4>
+                            <span>Product Manager</span>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+                    <div class="member">
+                        <div class="member-img">
+                            <img src="<?= base_url() ?>/vendor/bizland/assets/img/team/team-3.jpg" class="img-fluid" alt="">
+
+                        </div>
+                        <div class="member-info">
+                            <h4>William Anderson</h4>
+                            <span>CTO</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+                    <div class="member">
+                        <div class="member-img">
+                            <img src="<?= base_url() ?>/vendor/bizland/assets/img/team/team-4.jpg" class="img-fluid" alt="">
+
+                        </div>
+                        <div class="member-info">
+                            <h4>Amanda Jepson</h4>
+                            <span>Accountant</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="footer__widget right-column" style="color: blanchedalmond;">
-                    <h5>ADDRESS</h5>
-                    <p style="color: blanchedalmond;">Address : 15 jln.buaran_kodiklat, New York, NY 12032, United
-                        States of
-                        America</p>
-                    <ul>
-                        <li>Phone : +0 (123) 456789</li>
-                        <li>Email : kintekkreasi@gmail.com</li>
-                        <li>Fax : +8 (123) 456 789</li>
-                    </ul>
-                </div>
-            </div>
         </div>
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                <div class="footer__copyright__text">
-                    <p>Copyright &copy; <script>
-                            document.write(new Date().getFullYear());
-                        </script> All rights reserved | </i> by <a href="https://kintekindo.net" target="_blank">Kintek</a></p>
-                </div>
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            </div>
-        </div>
-    </div>
-</footer>
-<!-- Footer Section End -->
+    </section><!-- End Team Section -->
+
+</main><!-- End #main -->

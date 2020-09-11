@@ -9,14 +9,18 @@ class Web extends CI_Controller
     }
     public function index()
     {
+        $this->load->model('Service_model');
+        $data['service'] = $this->Service_model->getAll();
+
         $this->load->view('template/header');
-        $this->load->view('Home/index');
+        $this->load->view('Home/index', $data);
         $this->load->view('template/footer');
     }
     public function about()
     {
         $this->load->model('About_model');
         $data['about'] = $this->About_model->getAll();
+
         $this->load->view('template/header');
         $this->load->view('about/index', $data);
         $this->load->view('template/footer');

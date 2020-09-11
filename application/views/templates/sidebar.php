@@ -32,7 +32,12 @@
         <a class="nav-link" href="<?= base_url('about') ?>">
             <i class="fas fa-fw fa-bookmark"></i>
             <span>About</span></a>
-        </>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="<?= base_url('service') ?>">
+            <i class="fas fa-fw fa-bookmark"></i>
+            <span>Service</span></a>
+    </li>
 
     <li class="nav-item">
         <a class="nav-link" href="<?= base_url('visi') ?>">

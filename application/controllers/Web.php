@@ -10,9 +10,11 @@ class Web extends CI_Controller
 
     public function render_view($path, $data)
     {
+        $this->load->model('Contact_model');
+        $data['contact'] = $this->Contact_model->getAll();
         $this->load->view('template/header', $data);
         $this->load->view($path, $data);
-        $this->load->view('template/footer');
+        $this->load->view('template/footer', $data);
     }
 
     public function index()

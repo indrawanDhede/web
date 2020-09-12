@@ -11,16 +11,14 @@
                 <div class="col-lg-3 col-md-6 footer-contact">
                     <h3>Kintek<span>.</span></h3>
                     <p>
-                        Jl. Kodiklat TNI <br>
-                        gang gowok<br>
-                        Pamulang Selatan <br><br>
+                        <?= $contact[0]->alamat ?>
                     </p>
                 </div>
                 <div class="col-lg-3 col-md-6 footer-contact">
                     <h3>Contact<span>.</span></h3>
                     <p>
-                        <strong>Phone:</strong> +62 811 8333 433<br>
-                        <strong>Email:</strong> info@kintekindo.net<br>
+                        <strong>Phone:</strong> <?= $contact[0]->telp ?><br>
+                        <strong>Email:</strong> <?= $contact[0]->email ?><br>
                     </p>
                 </div>
 

@@ -16,8 +16,8 @@
                     <div class="col-lg-6 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
                         <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                             <div class=" icon"><i class="bx bx-file"></i></div>
-                            <h4><a href="">Sadar Dengan Tujuan Anda</a></h4>
-                            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                            <h4><a href=""><?= $data->nama_service ?></a></h4>
+                            <p><?= $data->detail_service ?></p>
                         </div>
                     </div>
                 <?php endforeach ?>
